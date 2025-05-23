@@ -1,7 +1,9 @@
 import React from "react";
+import {skillsProgress} from './progressBar.js'
 import SkillProgressBar from "./SkillProgressBar";
 
 const About = () => {
+  
   return (
     <div className="min-h-screen px-4 sm:px-6 md:px-12 lg:px-16 py-12 ">
       <h1 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-white">
@@ -91,7 +93,7 @@ const About = () => {
         {/* </div> */}
       </div>
 
-      <SkillProgressBar />
+      <SkillProgressBar skills={skillsProgress}/>
     </div>
   );
 };
