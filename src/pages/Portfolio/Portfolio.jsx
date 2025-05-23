@@ -3,7 +3,7 @@ import { portfolio } from "./portfolio";
 import { DeckRounded } from "@mui/icons-material";
 const Portfolio = ({ details }) => {
   return (
-    <div className="min-h-screen border border-yellow-500 py-12 flex items-center flex-col gap-20">
+    <div className="min-h-screen  py-12 flex items-center flex-col gap-20">
       <h1 className="text-center text-white text-4xl font-bold mb-12">
         MY PORTFOLIO
       </h1>
@@ -26,7 +26,7 @@ const Portfolio = ({ details }) => {
           hover:shadow-[0_0_15px_4px]
           transform
           hover:scale-105
-          transition duration-1000
+          transition duration-100
           hover:-translate-y-2
           
           bg-[#191D2B]
