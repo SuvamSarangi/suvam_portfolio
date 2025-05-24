@@ -11,8 +11,8 @@ const About = () => {
       </h1>
 
       <div className="w-full flex flex-col lg:flex-row justify-between items-start  gap-12 pt-7  pl-5 relative ">
-        {/* Left Column */}
-        <div className="w-full lg:max-w-2xl space-y-6 text-white font-semibold text-base sm:text-lg lg:text-[19px] p-5 ">
+        {/* Left Column   sm:text-lg lg:text-[19px]*/}
+        <div className="w-full lg:max-w-2xl space-y-6 text-white font-semibold text-base sm:text-lg md:text-2xl p-5 ">
           <p className="leading-relaxed ">
             I'm Suvam Sarangi, a recent Software Engineering graduate based in
             Hyderabad, India. I thrive on tackling challenges across various
@@ -29,8 +29,9 @@ const About = () => {
 
           <div className=" border-2 border-[#4A62D6] hover:bg-[#4A62D6] w-48 lg:w-48 sm:w-48 rounded-full relative overflow-visible right-0  duration-300">
             <a
-              href="#"
+              href="./suvam-FullStackDeveloper.pdf"
               className="inline-flex items-center text-white font-medium text-sm sm:text-base p-2"
+              
             >
               <span className="font-bold font-mono">Download Resume</span>
               <div className="absolute top-1/2 right-0  transform  -translate-y-1/2 bg-[#4A62D6] rounded-full">
