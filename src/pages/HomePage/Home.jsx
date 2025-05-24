@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import About from "../AboutPage/About";
 
 const Home = () => {
@@ -8,10 +9,24 @@ const Home = () => {
     <div className="min-h-screen text-white font-sans flex flex-col justify-center items-center pt-20 px-5">
     {/* Profile Image with gradient ring */}
     <div className="w-60 h-60 rounded-full p-1 mb-6 ">
-      <img
+      <motion.img
         src="/Suvam.jpeg"
         alt="Profile"
         className="w-full h-full object-cover rounded-full"
+          initial={{
+                opacity:0,
+                scale:0.5
+        
+              }}
+              animate={{
+               opacity:1,
+               scale:1
+              }}
+              transition={{
+                duration:1,
+                delay:0.8,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
       />
     </div>
 
