@@ -8,7 +8,8 @@ const Portfolio = ({ details }) => {
         MY PORTFOLIO
       </h1>
       {/* <div className='text-center px-5 border border-b-blue-200 min-w-fit'> */}
-      <p className="text-white max-w-6xl text-center  text-2xl">
+      <p className="text-white max-w-6xl text-center  text-base sm:text-lg md:text-xl px-4
+">
         Hello and welcome to my portfolio! I'm a fullstack java developer, and
         I'm thrilled to share some handpicked collection of my impressive
         projects with you. These projects highlight my skills in crafting
