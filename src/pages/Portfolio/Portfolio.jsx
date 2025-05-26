@@ -30,7 +30,7 @@ const Portfolio = ({ details }) => {
           transition duration-100
           hover:-translate-y-2
           
-          bg-[#191D2B]
+          bg-[#0E0E10]
           "
           >
 

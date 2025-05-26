@@ -9,10 +9,10 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full   text-white flex justify-around items-center py-5 shadow-md  bg-[#191D2B] z-30 ">
+    <nav className="fixed top-0 left-0 w-full   text-white flex justify-around items-center py-5 shadow-md  bg-[#0E0E10] z-30 ">
       <div>
-      <img src="suvam.png" className="w-14 h-14 rounded-full "/>
-        <h2 className=" font-bold text-white ">Developer</h2>
+      {/* <img src="suvam.png" className="w-14 h-14 rounded-full "/> */}
+        <h2 className=" font-bold text-white ">Suvam</h2>
         
       </div>
       <ul

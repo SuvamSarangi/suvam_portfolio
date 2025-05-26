@@ -57,7 +57,7 @@ const About = () => {
         {/* <div className="flex flex-row justify-center items-center"> */}
         <div className=" grid lg:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 p-7 lg:p-5 w-full lg:gap-6 ">
           <div
-            className="lg:w-full sm:w-64 h-60  border border-indigo-500 hover:border-indigo-500 rounded-lg flex 
+            className="lg:w-full sm:w-64 h-60 bg-[#0E0E10] border border-indigo-500 hover:border-indigo-500 rounded-lg flex 
         flex-col justify-start items-start pl-5 pt-5  hover:shadow-[0_0_10px_4px] 
         hover:shadow-indigo-500/50
          transition duration-300 hover:scale-110 lg:mr-10
@@ -70,21 +70,21 @@ const About = () => {
             </p>
           </div>
 
-          <div className="lg:w-full sm:w-64 h-60  border border-indigo-500 hover:border-indigo-500 rounded-lg flex flex-col justify-start items-start pl-5 pt-5 hover:shadow-[0_0_10px_4px] hover:shadow-indigo-500/50 transition duration-300 hover:scale-110  mb-6">
+          <div className="lg:w-full sm:w-64 h-60 bg-[#0E0E10] border border-indigo-500 hover:border-indigo-500 rounded-lg flex flex-col justify-start items-start pl-5 pt-5 hover:shadow-[0_0_10px_4px] hover:shadow-indigo-500/50 transition duration-300 hover:scale-110  mb-6">
             <p className="text-indigo-600 text-2xl font-bold">30+</p>
             <p className="text-xs tracking-widest mt-2 uppercase text-center px-2 text-white">
               Projects
             </p>
           </div>
 
-          <div className="lg:w-full sm:w-64 h-60 border border-indigo-500 hover:border-indigo-500 rounded-lg flex flex-col justify-start items-start pl-5 pt-5  hover:shadow-[0_0_10px_4px] hover:shadow-indigo-500/50 transition duration-300 hover:scale-110  mb-6">
+          <div className="lg:w-full sm:w-64 h-60 bg-[#0E0E10]  border border-indigo-500 hover:border-indigo-500 rounded-lg flex flex-col justify-start items-start pl-5 pt-5  hover:shadow-[0_0_10px_4px] hover:shadow-indigo-500/50 transition duration-300 hover:scale-110  mb-6">
             <p className="text-indigo-600 text-2xl font-bold">1+</p>
             <p className="text-xs tracking-widest mt-2 uppercase text-center px-2 text-white">
               Year of Experience
             </p>
           </div>
 
-          <div className="lg:w-full sm:w-64 h-60 border border-indigo-500 hover:border-indigo-500 rounded-lg flex flex-col justify-start items-start pl-5 pt-5  hover:shadow-[0_0_10px_4px] hover:shadow-indigo-500/50 transition duration-300 hover:scale-110  mb-6">
+          <div className="lg:w-full sm:w-64 h-60  bg-[#0E0E10] border border-indigo-500 hover:border-indigo-500 rounded-lg flex flex-col justify-start items-start pl-5 pt-5  hover:shadow-[0_0_10px_4px] hover:shadow-indigo-500/50 transition duration-300 hover:scale-110  mb-6">
             <p className="text-indigo-600 text-2xl font-bold">10+</p>
             <p className="text-xs tracking-widest mt-2 uppercase text-center px-2 text-white">
               Professional Certifications

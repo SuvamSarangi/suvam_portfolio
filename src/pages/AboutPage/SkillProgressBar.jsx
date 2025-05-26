@@ -32,13 +32,13 @@ const SkillProgressBar = ({ skills }) => {
         {skills.map((prog, index) => (
           <div
             key={index}
-            className="h-48 bg-white p-4 flex flex-col justify-evenly rounded-xl shadow"
+            className="h-48 bg-[#1C1C21] p-4 flex flex-col justify-evenly rounded-xl shadow"
           >
           <img  src={prog.image} className="w-12 h-12"/>
-            <h2 className="text-lg font-semibold text-gray-800 text-right">
+            <h2 className="text-lg font-semibold text-white text-right">
               {prog.skill}
             </h2>
-            <p className="text-sm text-gray-600">{prog.about}</p>
+            <p className="text-sm text-white">{prog.about}</p>
             <div className="w-full h-5 rounded-full bg-gray-300 mt-2">
               <motion.div
                 className="h-5 bg-green-700 rounded-full text-white text-center text-xs"
