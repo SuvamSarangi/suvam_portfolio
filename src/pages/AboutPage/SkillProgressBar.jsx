@@ -18,7 +18,7 @@ const SkillProgressBar = ({ skills }) => {
   }, [isInView, skills]);
 
   return (
-    <div className="w-full min-h-screen px-4 sm:px-6 md:px-12 py-12 border border-amber-100">
+    <div className="w-full min-h-screen px-4 sm:px-6 md:px-12 py-12">
       <h1 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-white">
         My Skills
       </h1>
@@ -26,7 +26,7 @@ const SkillProgressBar = ({ skills }) => {
           {/* MySkill cards */}
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full  gap-7"
-        // style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}
+
         ref={scrollRef}
       >
         {skills.map((prog, index) => (
