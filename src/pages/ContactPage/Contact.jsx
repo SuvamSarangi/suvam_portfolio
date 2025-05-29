@@ -44,7 +44,7 @@ const Contact = () => {
             </div>
             <div>
               <p className="font-medium text-amber-400">LinkedIn</p>
-              <p>https://linkedin.com/in/your-profile</p>
+              <p>linkedin.com/in/subham-sarangi</p>
             </div>
           </div>
         </div>
