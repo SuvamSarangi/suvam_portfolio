@@ -62,8 +62,7 @@ const Home = () => {
         </h2>
 
         <p className="text-center text-base md:text-lg text-gray-300 mt-5 max-w-3xl">
-          I am a FullStack developer from Hyderabad, India with 1 years of
-          experience in multiple companies like Microsoft, Tesla and Apple.
+         I am a passionate FullStack developer from Odisha, India, and a recent MCA graduate, eager to begin my professional journey and contribute to impactful projects.
         </p>
 
         {/* Buttons */}
