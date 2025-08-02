@@ -1,6 +1,6 @@
 import React from "react";
-import {skillsProgress} from './progressBar.js'
-import SkillProgressBar from "./SkillProgressBar";
+import Skill from "./Skill.jsx";
+
 
 const About = () => {
   
@@ -94,7 +94,7 @@ const About = () => {
         {/* </div> */}
       </div>
 
-      <SkillProgressBar skills={skillsProgress}/>
+      <Skill/>
     </div>
   );
 };
