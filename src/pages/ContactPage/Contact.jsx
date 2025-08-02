@@ -21,7 +21,7 @@ const Contact = () => {
           <div className="bg-[#1C1C21] w-full max-w-md p-4 rounded-lg flex items-center gap-3">
             <div className="w-12 h-12 rounded-full bg-[#6250D8] flex justify-center items-center">
               <img src="./phone.png" className="w-6 h-6 invert" alt="email" />
-            </div>
+            </div>  
             <div>
               <p className="font-medium text-amber-400">Phone</p>
               <p>+91 7008519377</p>
