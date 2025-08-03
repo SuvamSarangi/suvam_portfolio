@@ -26,7 +26,7 @@ const Home = () => {
         {/* Profile Image with gradient ring */}
         <div className="w-60 h-60 rounded-full p-1 mb-6 ">
           <motion.img
-            src="/Suvam.jpeg"
+            src="/subham.JPG"
             alt="Profile"
             className="w-full h-full object-cover rounded-full"
             initial={{
