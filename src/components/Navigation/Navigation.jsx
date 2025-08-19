@@ -36,10 +36,11 @@ const Navigation = () => {
         ))}
       </ul>
 
-      <div className="hidden md:block">
-        <button className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white font-medium px-6 py-2 rounded-full">
-          Contact
-        </button>
+      <div className="hidden md:block ">
+       <div className="flex gap-5">
+       <img className="w-12 h-12 invert-100" src="/public/linkedin.png"/>
+       <img className="w-12 h-12" src="/public/git.png"/>
+       </div>
       </div>
 
      <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} toggleMenu={toggleMenu}/>
