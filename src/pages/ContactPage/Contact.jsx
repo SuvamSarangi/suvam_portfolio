@@ -1,6 +1,35 @@
-import React from "react";
-
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    toast.loading("Sending your message...");
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (resolve) => {
+         
+          toast.success("Message sent successfully");
+          toast.dismiss();
+          form.current.reset();
+        
+        },
+        (error) => {
+          toast.dismiss();
+          toast.error("Failed to send message. Please try again.");
+          console.error("EmailJS Error:", error);
+        }
+      );
+  };
+
   return (
     <div className="text-white px-4 py-8 sm:px-6 md:px-8 lg:px-12">
       <h1 className="text-center text-3xl sm:text-4xl mb-12">Get In Touch</h1>
@@ -21,7 +50,7 @@ const Contact = () => {
           <div className="bg-[#1C1C21] w-full max-w-md p-4 rounded-lg flex items-center gap-3">
             <div className="w-12 h-12 rounded-full bg-[#6250D8] flex justify-center items-center">
               <img src="./phone.png" className="w-6 h-6 invert" alt="email" />
-            </div>  
+            </div>
             <div>
               <p className="font-medium text-amber-400">Phone</p>
               <p>+91 7008519377</p>
@@ -40,7 +69,11 @@ const Contact = () => {
 
           <div className="bg-[#1C1C21] w-full max-w-md p-4 rounded-lg flex items-center gap-3">
             <div className="w-12 h-12 rounded-full bg-[#6250D8] flex justify-center items-center">
-              <img src="./linkedin.png" className="w-6 h-6 invert" alt="email" />
+              <img
+                src="./linkedin.png"
+                className="w-6 h-6 invert"
+                alt="email"
+              />
             </div>
             <div>
               <p className="font-medium text-amber-400">LinkedIn</p>
@@ -51,24 +84,36 @@ const Contact = () => {
 
         {/* Contact form */}
         <div className="flex flex-col justify-center items-center bg-[#0E0E10]  rounded-lg w-full px-4 py-6 sm:px-6">
-          <form className="w-full max-w-md space-y-4">
+          <Toaster position="top-right" reverseOrder={false} />
+          <form
+            className="w-full max-w-md space-y-4"
+            ref={form}
+            onSubmit={sendEmail}
+          >
             <div>
               <label className="block mb-1 text-sm">Your Name</label>
               <input
+                name="name"
                 type="text"
                 className="bg-[#1C1C21] w-full rounded-lg h-10 px-3 text-sm"
+                required
               />
             </div>
             <div>
               <label className="block mb-1 text-sm">Your Email</label>
               <input
+                name="from_email"
                 type="email"
                 className="bg-[#1C1C21] w-full rounded-lg h-10 px-3 text-sm"
+                required
               />
             </div>
             <div>
               <label className="block mb-1 text-sm">Your Message</label>
-              <textarea className="bg-[#1C1C21] w-full min-h-[100px] rounded-lg px-3 py-2 text-sm resize"></textarea>
+              <textarea
+                className="bg-[#1C1C21] w-full min-h-[100px] rounded-lg px-3 py-2 text-sm resize"
+                name="message"
+              ></textarea>
             </div>
             <div>
               <button
