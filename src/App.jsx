@@ -8,6 +8,7 @@ import Contact from './pages/ContactPage/Contact.jsx'
 import Project from './pages/Projects/Project.jsx';
 import Education from './pages/EducationPage/Education.jsx';
 import Skill from './pages/AboutPage/Skill.jsx';
+import Certification from './pages/CertificationPage/Certification.jsx';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Element name="skill"><Skill/></Element>
       <Element name="project"><Project /></Element>
       <Element name="education"><Education /></Element>
+      <Element name="certificate"><Certification /></Element>
       <Element name="contact"><Contact /></Element>
      
     </div>
