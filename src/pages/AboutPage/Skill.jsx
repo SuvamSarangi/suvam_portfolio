@@ -4,14 +4,14 @@ import { data } from "framer-motion/client";
 
 const Skill = () => {
   return (
-    <div className="w-full min-h-screen px-4 sm:px-6 md:px-12 py-12 overflow-x-hidden">
+    <div className=" min-h-screen px-4 sm:px-6 md:px-12 lg:px-16 py-12 overflow-x-hidden">
       <h1 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-white">
         My Skills
       </h1>
-      <p className="text-gray-500 ml-7 mb-4">
+      <p className="text-gray-500 ml-10 mb-4">
         Technologies and tools I've worked with throughout my projects
       </p>
-      <div className="ml-7">
+      <div className="ml-10">
         <div className="mb-6">
           <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-white text-center sm:text-left">
             Front End
