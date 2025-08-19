@@ -4,4 +4,5 @@
      { key: "skill", link: "My Skill" },
     { key: "project", link: "Project" },
     { key: "education", link: "Education" },
+    { key: "certificate", link: "Certification" },
   ];
