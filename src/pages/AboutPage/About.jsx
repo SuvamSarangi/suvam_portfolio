@@ -1,6 +1,4 @@
 import React from "react";
-import Skill from "./Skill.jsx";
-
 
 const About = () => {
   
@@ -94,7 +92,6 @@ const About = () => {
         {/* </div> */}
       </div>
 
-      <Skill/>
     </div>
   );
 };
