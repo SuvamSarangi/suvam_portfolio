@@ -43,14 +43,14 @@ const Navigation = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-8 h-8 invert-100" src="public/linkedin.png" />
+            <img className="w-8 h-8 invert-100" src="/linkedin.png" />
           </a>
           <a
             href="https://github.com/SuvamSarangi?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-8 h-8" src="public/git.png" />
+            <img className="w-8 h-8" src="/git.png" />
           </a>
         </div>
       </div>
