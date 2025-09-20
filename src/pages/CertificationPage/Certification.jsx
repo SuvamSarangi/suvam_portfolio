@@ -60,6 +60,7 @@ const Certification = () => {
       >
         <img
           src={slides[index].image}
+          loading="lazy" 
           alt={`Certificate ${index + 1}`}
           className="w-full h-full object-contain rounded-lg shadow-lg"
         />
